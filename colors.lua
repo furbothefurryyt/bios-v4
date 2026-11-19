@@ -1,3 +1,4 @@
+local monitor = peripheral.find("monitor")
 monitor.setPaletteColor(colors.red, 0xFF5050)
 monitor.setPaletteColor(colors.orange, 0xFFFF50)
 monitor.setPaletteColor(colors.green, 0x50FF50)
