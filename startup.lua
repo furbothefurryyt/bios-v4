@@ -8,6 +8,8 @@ local monitor = peripheral.find("monitor")
 local modem = peripheral.find("modem")
 local drive = peripheral.find("drive")
 local speaker = peripheral.find("speaker")
+local version = 4
+local subversion = 2
 
 sleep(0)
 
@@ -100,5 +102,5 @@ else
     monitor.write("* Inserting a floppy disk into the drive.")
             
     monitor.setCursorPos(3,37)
-    monitor.write("BIOS v4.1")
+    monitor.write("BIOS" .. version .. "." .. subversion)
 end
