@@ -1,6 +1,6 @@
-shell.run("colors.lua")
-shell.run("fbios.lua")
-shell.run("wget ")
+shell.run("./bios_options/colors.lua")
+shell.run("delete fbios.lua")
+shell.run("wget https://raw.githubusercontent.com/furbothefurryyt/bios-v4/refs/heads/main/fbios.lua")
 
 sleep(0)
 
