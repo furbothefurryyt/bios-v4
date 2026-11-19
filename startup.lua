@@ -16,7 +16,7 @@ print("(i) Running peripheral checklist...")
 if monitor then
     print("(i) Monitor found.")
 else
-    print("(!) No monitor found. Please turn on when fixed.")
+    printError("(!) No monitor found. Please turn on when fixed.")
     sleep(2)
     os.shutdown()
 end
@@ -24,7 +24,7 @@ end
 if modem then
     print("(i) Modem found.")
 else
-    error("(!) No modem found. Please turn on when fixed.")
+    printError("(!) No modem found. Please turn on when fixed.")
     sleep(2)
     os.shutdown()
 end
@@ -32,7 +32,7 @@ end
 if drive then
     print("(i) CD/ROM found.")
 else
-    error("(!) No CD/ROM found. Please turn on when fixed.")
+    printError("(!) No CD/ROM found. Please turn on when fixed.")
     sleep(2)
     os.shutdown()
 end
@@ -40,7 +40,7 @@ end
 if speaker then
     print("(i) Speaker found.")
 else
-    error("(!) No speaker found. Please turn on when fixed.")
+    printError("(!) No speaker found. Please turn on when fixed.")
     sleep(2)
     os.shutdown()
 end
@@ -66,7 +66,7 @@ if drive.hasData() == true then
         print("(i) A bootable media was found! Booting...")
         os.run({}, mainPath)
     else
-            print("(!) The media inserted was invalid. Please insert a valid bootable media.")
+            printError("(!) The media inserted was invalid. Please insert a valid bootable media.")
             sleep(0)
             monitor.setCursorPos(1,1)
             monitor.setBackgroundColor(colors.red)
@@ -84,7 +84,7 @@ if drive.hasData() == true then
     end
 
 else
-    print("(!) No bootable media was found. Please insert a valid bootable media.")
+    printError("(!) No bootable media was found. Please insert a valid bootable media.")
     sleep(0)
     monitor.setCursorPos(1,1)
     monitor.setBackgroundColor(colors.red)
