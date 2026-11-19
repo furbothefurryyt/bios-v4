@@ -1,5 +1,5 @@
 term.setPalleteColor(colors.red, 0xFF5050)
 term.setPalleteColor(colors.orange, 0xFFFF50)
 term.setPalleteColor(colors.green, 0x50FF50)
-term.setPalleteColor(colors.gray, 0x505050)
+term.setPalleteColor(colors.gray, 0xAFAFAF)
 print("(i) Color pallete set.")
