@@ -102,5 +102,5 @@ else
     monitor.write("* Inserting a floppy disk into the drive.")
             
     monitor.setCursorPos(3,37)
-    monitor.write("BIOS" .. version .. "." .. subversion)
+    monitor.write("BIOS v" .. version .. "." .. subversion)
 end
